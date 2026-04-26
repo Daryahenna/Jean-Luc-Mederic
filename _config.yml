@@ -1,0 +1,35 @@
+title: "Jean-Luc SEO Machine"
+description: "Guides about sales, objections, and AI sales assistant."
+
+# GitHub Pages project site
+url: "https://daryahenna.github.io"
+baseurl: "/jeanluc-seo-machine"
+
+permalink: pretty
+
+plugins:
+  - jekyll-sitemap
+
+collections:
+  guides:
+    output: true
+    permalink: /guides/:slug/
+
+defaults:
+  - scope:
+      path: "_guides/ru"
+      type: guides
+    values:
+      lang: ru
+      layout: guide
+      permalink: /ru/guides/:slug/
+  - scope:
+      path: "ru"
+    values:
+      lang: ru
+
+exclude:
+  - SESSION.md
+  - FILES.md
+  - STYLE.md
+  - extracted

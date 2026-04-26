@@ -1,0 +1,71 @@
+---
+layout: default
+title: "Гайды"
+description: "Практические руководства по продажам и AI."
+lang: ru
+---
+
+<h1 class="page-title">Гайды</h1>
+<p class="page-sub">Практические руководства по продажам и AI. Без воды, с шаблонами и примерами.</p>
+
+{% assign guides_ru = site.guides | where: "lang", "ru" %}
+{% assign categories = guides_ru | map: "category" | uniq | sort %}
+
+<div class="chips" id="chips"></div>
+
+<div class="grid" id="grid">
+  {% for g in guides_ru %}
+    <a class="card" href="{{ site.baseurl }}{{ g.url }}" data-category="{{ g.category | escape }}">
+      <div class="card-media"></div>
+      <div class="card-body">
+        {% if g.category %}
+          <span class="card-kicker">{{ g.category }}</span>
+        {% endif %}
+        <h2 class="card-title">{{ g.title }}</h2>
+        {% if g.description %}
+          <p class="card-desc">{{ g.description }}</p>
+        {% endif %}
+      </div>
+    </a>
+  {% endfor %}
+</div>
+
+<script>
+  (function () {
+    var categories = {{ categories | jsonify }};
+    var chips = document.getElementById('chips');
+    var grid = document.getElementById('grid');
+
+    function mkChip(label, active) {
+      var b = document.createElement('button');
+      b.className = 'chip' + (active ? ' is-active' : '');
+      b.type = 'button';
+      b.textContent = label;
+      b.dataset.filter = label;
+      return b;
+    }
+
+    var all = mkChip('Все', true);
+    chips.appendChild(all);
+    categories.forEach(function (c) {
+      chips.appendChild(mkChip(c, false));
+    });
+
+    function setActive(label) {
+      Array.prototype.slice.call(chips.children).forEach(function (el) {
+        el.classList.toggle('is-active', el.dataset.filter === label);
+      });
+
+      var cards = grid.querySelectorAll('[data-category]');
+      cards.forEach(function (card) {
+        var ok = (label === 'Все') || (card.getAttribute('data-category') === label);
+        card.style.display = ok ? '' : 'none';
+      });
+    }
+
+    chips.addEventListener('click', function (e) {
+      if (!e.target || !e.target.dataset || !e.target.dataset.filter) return;
+      setActive(e.target.dataset.filter);
+    });
+  })();
+</script>
