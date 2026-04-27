@@ -16,7 +16,6 @@
 
 {% assign banner_medium = include.utm_medium | default: 'banner' %}
 {% assign banner_content = page.slug | default: page.url | url_encode %}
+{% assign banner_variant = include.variant | default: '' %}
 
-<a class="cta-banner" href="https://jeanlucmederic.site/#register?utm_source=seo-machine&utm_medium={{ banner_medium | url_encode }}&utm_campaign={{ banner_lang | url_encode }}&utm_content={{ banner_content }}">
-  <img class="cta-banner-img" src="{{ banner_src }}" alt="{{ banner_alt }}" loading="lazy" />
-</a>
+<a class="cta-banner{% if banner_variant != '' %} is-{{ banner_variant }}{% endif %}" href="https://jeanlucmederic.site/#register?utm_source=seo-machine&utm_medium={{ banner_medium | url_encode }}&utm_campaign={{ banner_lang | url_encode }}&utm_conten

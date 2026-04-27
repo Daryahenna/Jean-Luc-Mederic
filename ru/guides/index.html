@@ -8,7 +8,7 @@ lang: ru
 <h1 class="page-title">Гайды</h1>
 <p class="page-sub">Практические руководства по продажам и AI. Без воды, с шаблонами и примерами.</p>
 
-{% include paris-banner.html utm_medium="guides_index_banner" %}
+{% include paris-banner.html utm_medium="guides_index_banner" variant="index" %}
 
 {% assign guides_ru = site.guides | where: "lang", "ru" %}
 {% assign categories = guides_ru | map: "category" | uniq | sort %}
@@ -69,5 +69,4 @@ lang: ru
       if (!e.target || !e.target.dataset || !e.target.dataset.filter) return;
       setActive(e.target.dataset.filter);
     });
-  })();
-</script>
+  
