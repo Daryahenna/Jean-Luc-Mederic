@@ -1,5 +1,7 @@
 <!doctype html>
-<html lang="{{ page.lang | default: 'ru' }}">
+{% assign current_lang = page.lang | default: site.default_lang | default: 'ru' %}
+{% assign t = site.data.i18n[current_lang] %}
+<html lang="{{ current_lang }}">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
@@ -13,11 +15,20 @@
     <meta name="description" content="{{ meta_desc }}" />
     <link rel="canonical" href="{{ meta_url }}" />
 
+    {% comment %}hreflang tags for multi-language SEO. Self-canonical + alternates from page.hreflang_alt frontmatter.{% endcomment %}
+    <link rel="alternate" hreflang="{{ current_lang }}" href="{{ meta_url }}" />
+    {% if page.hreflang_alt %}
+      {% for alt in page.hreflang_alt %}
+        <link rel="alternate" hreflang="{{ alt[0] }}" href="{{ site.url }}{{ site.baseurl }}{{ alt[1] }}" />
+      {% endfor %}
+      <link rel="alternate" hreflang="x-default" href="{{ site.url }}{{ site.baseurl }}{{ page.hreflang_alt.fr | default: page.hreflang_alt.en | default: page.url }}" />
+    {% endif %}
+
     <meta property="og:title" content="{{ meta_title }}" />
     <meta property="og:description" content="{{ meta_desc }}" />
     <meta property="og:url" content="{{ meta_url }}" />
     <meta property="og:type" content="{% if page.layout == 'guide' %}article{% else %}website{% endif %}" />
-    <meta property="og:locale" content="ru_RU" />
+    <meta property="og:locale" content="{{ t.og_locale | default: 'ru_RU' }}" />
     <meta name="twitter:card" content="summary" />
 
     <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/main.css" />

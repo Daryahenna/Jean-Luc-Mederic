@@ -189,17 +189,20 @@ cd /tmp/jlm && git add -A && \
 
 ---
 
-## 11. Уже существующие гайды
+## 11. Уже существующие гайды (статус на 2026-04-27)
 
-- `objection-dorogo` — «Дорого» (**эталон**, переделан полностью)
-- `objection-podumat` — «Надо подумать» (старый стиль, ждёт переделки)
-- `objection-pozhe` — «Давайте позже» (старый стиль)
-- `objection-net-vremeni` — «Нет времени» (старый стиль)
-- `objection-nado-posovetovatsya` — «Надо посоветоваться» (старый стиль)
-- `closing-questions` — Вопросы для закрытия (старый стиль)
-- `prospecting-plan` — План проспектинга (старый стиль)
+Все гайды переделаны под эталонный стиль (Менеджер в диалогах, `{% include paris-banner.html %}` для inline-CTA, кросс-ссылки в конце, FAQ только в frontmatter).
 
-Сверяй стиль с `objection-dorogo.md`.
+- `objection-dorogo` — «Дорого» (**эталон**, чистый)
+- `objection-podumat` — «Надо подумать» ✅
+- `objection-pozhe` — «Давайте позже» ✅
+- `objection-net-vremeni` — «Нет времени» ✅
+- `objection-nado-posovetovatsya` — «Надо посоветоваться» ✅
+- `closing-questions` — Вопросы для закрытия ✅
+- `prospecting-plan` — План проспектинга ✅
+- `kp-ghosting` — Клиент пропал после КП ✅ (новый, 2026-04-27)
+
+Сверяй стиль с `objection-dorogo.md` или с любым другим гайдом из списка ✅.
 
 ---
 

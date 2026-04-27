@@ -1,0 +1,44 @@
+name: Reddit research (3x daily)
+
+# Public Reddit JSON API — no auth, no secrets. Runs the scraper 3x/day,
+# updates research/reddit_results.json + research/reddit_digest.md, commits
+# back to main if anything new.
+
+on:
+  schedule:
+    # 06:00, 14:00, 22:00 UTC
+    - cron: "0 6,14,22 * * *"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  research:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install deps
+        run: pip install requests
+
+      - name: Run Reddit research
+        run: python research/reddit_research.py
+
+      - name: Commit & push if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add research/reddit_results.json research/reddit_digest.md
+          if git diff --staged --quiet; then
+            echo "No changes — nothing to commit."
+          else
+            git commit -m "research: refresh reddit digest ($(date -u +%Y-%m-%dT%H:%MZ))"
+            git push
+          fi

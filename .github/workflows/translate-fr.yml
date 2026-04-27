@@ -1,0 +1,82 @@
+name: Translate guides RU → FR
+
+# Manual trigger only. We do NOT auto-translate on every push to avoid
+# burning API tokens on minor edits. Run this when a batch of RU guides
+# is ready for FR translation.
+on:
+  workflow_dispatch:
+    inputs:
+      files:
+        description: "Comma-separated list of RU slugs to translate (leave empty for ALL untranslated). Example: objection-dorogo,objection-podumat"
+        required: false
+        default: ""
+      model:
+        description: "OpenAI model. Defaults to gpt-4o (good balance). For best quality try gpt-5; for cheapest try gpt-4o-mini."
+        required: false
+        default: "gpt-4o"
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  translate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r scripts/requirements.txt
+
+      - name: Run translation
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          TRANSLATE_FILES: ${{ github.event.inputs.files }}
+          TRANSLATE_MODEL: ${{ github.event.inputs.model }}
+        run: |
+          python scripts/translate.py \
+            --source-lang ru \
+            --target-lang fr \
+            --prompt prompts/opencode-translate-fr.md \
+            --source-dir _guides/ru \
+            --target-dir _guides/fr \
+            --model "${TRANSLATE_MODEL:-gpt-4o}" \
+            ${TRANSLATE_FILES:+--files "$TRANSLATE_FILES"}
+
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v6
+        with:
+          commit-message: "Translate guides RU → FR (automated)"
+          branch: "translate/ru-to-fr-${{ github.run_number }}"
+          delete-branch: true
+          title: "🇫🇷 RU → FR translation batch (run #${{ github.run_number }})"
+          body: |
+            Automated translation of Russian guides to French via OpenAI.
+
+            **What to review:**
+            - Open each new file in `_guides/fr/`
+            - Check tone (`tu`, not `vous`)
+            - Verify HTML structure mirrors source
+            - Verify dialog uses « Vendeur » (not «Менеджер» / «Жан-Люк»)
+            - Verify internal links point to `/fr/guides/`
+            - Check `_guides/fr/_TRANSLATION_LOG.md` for any flagged issues
+
+            **Do not merge if:**
+            - Translation log reports validation failures
+            - HTML block counts don't match source
+            - Russian text leaks through (especially in dialogs/cite)
+
+            Triggered by: @${{ github.actor }}
+            Model: ${{ github.event.inputs.model || 'gpt-4o' }}
+            Files: ${{ github.event.inputs.files || 'all untranslated' }}
+          labels: |
+            translation
+            automated

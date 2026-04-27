@@ -24,9 +24,44 @@ defaults:
       layout: guide
       permalink: /ru/guides/:slug/
   - scope:
+      path: "_guides/fr"
+      type: guides
+    values:
+      lang: fr
+      layout: guide
+      permalink: /fr/guides/:slug/
+  - scope:
+      path: "_guides/en"
+      type: guides
+    values:
+      lang: en
+      layout: guide
+      permalink: /en/guides/:slug/
+  - scope:
       path: "ru"
     values:
       lang: ru
+  - scope:
+      path: "fr"
+    values:
+      lang: fr
+  - scope:
+      path: "en"
+    values:
+      lang: en
+
+# Supported languages (used by layouts for hreflang and language switcher)
+languages:
+  - code: ru
+    name: "Русский"
+    short: "RU"
+  - code: fr
+    name: "Français"
+    short: "FR"
+  - code: en
+    name: "English"
+    short: "EN"
+default_lang: ru
 
 exclude:
   - SESSION.md

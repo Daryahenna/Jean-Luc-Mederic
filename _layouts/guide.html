@@ -1,12 +1,13 @@
 ---
 layout: default
 ---
+{% assign t = site.data.i18n[page.lang] %}
 <article class="prose is-guide">
 
-  <nav class="breadcrumbs" aria-label="Хлебные крошки">
-    <a href="{{ site.baseurl }}/">Главная</a>
+  <nav class="breadcrumbs" aria-label="{{ t.aria_breadcrumbs }}">
+    <a href="{{ site.baseurl }}/">{{ t.breadcrumb_home }}</a>
     <span class="sep">›</span>
-    <a href="{{ site.baseurl }}/ru/guides/">Гайды</a>
+    <a href="{{ site.baseurl }}/{{ page.lang }}/guides/">{{ t.breadcrumb_guides }}</a>
     {% if page.category %}
       <span class="sep">›</span>
       <span>{{ page.category }}</span>
@@ -22,8 +23,8 @@ layout: default
   {% elsif page.category %}
     <div class="guide-chips">
       <span class="guide-chip is-soft">{{ page.category }}</span>
-      <span class="guide-chip">Без воды</span>
-      <span class="guide-chip">{{ page.reading_time | default: "5 мин чтения" }}</span>
+      <span class="guide-chip">{{ t.no_water_chip }}</span>
+      <span class="guide-chip">{{ page.reading_time | default: t.reading_time_default }}</span>
     </div>
   {% endif %}
 
@@ -47,7 +48,7 @@ layout: default
       <time datetime="{{ page.date | date: '%Y-%m-%d' }}">{{ page.date | date: "%-d %B %Y" }}</time>
     {% endif %}
     <span class="dot"></span>
-    <span>{{ page.reading_time | default: "5 мин чтения" }}</span>
+    <span>{{ page.reading_time | default: t.reading_time_default }}</span>
   </div>
 
   {% if page.hero_emoji %}
@@ -65,7 +66,7 @@ layout: default
 
   {% if page.faq %}
     <section class="faq">
-      <h2>Частые вопросы</h2>
+      <h2>{{ t.faq_heading }}</h2>
       {% for item in page.faq %}
         <details class="faq-item">
           <summary>{{ item.q }}</summary>
@@ -76,10 +77,10 @@ layout: default
   {% endif %}
 
   <section class="outro-block">
-    <span class="outro-kicker">9-10 мая · Париж</span>
-    <h2 class="outro-title">Хочешь натренировать это в реальных диалогах?</h2>
-    <p class="outro-text">На мастер-классе мы разбираем твои реальные звонки и переписки. Приносишь 3 ситуации, где сорвалась сделка — разбираем вживую и собираем для тебя личный скрипт.</p>
-    <a class="outro-btn" href="https://jeanlucmederic.site/#register?utm_source=seo-machine&utm_medium=guide_outro&utm_campaign=ru&utm_content={{ page.slug | url_encode }}">Оставить заявку →</a>
+    <span class="outro-kicker">{{ t.outro_kicker }}</span>
+    <h2 class="outro-title">{{ t.outro_title }}</h2>
+    <p class="outro-text">{{ t.outro_text }}</p>
+    <a class="outro-btn" href="https://jeanlucmederic.site/#register?utm_source=seo-machine&utm_medium=guide_outro&utm_campaign={{ page.lang }}&utm_content={{ page.slug | url_encode }}">{{ t.outro_btn }}</a>
   </section>
 
   {% include paris-banner.html utm_medium="guide_banner_bottom" %}
@@ -90,7 +91,7 @@ layout: default
     </div>
     <div>
       <p class="author-card-name">Jean-Luc Médéric</p>
-      <p class="author-card-bio">Тренер по продажам, преподаватель метода Golden Key of Sales (Michael Bang). Помогаю предпринимателям и сейлзам закрывать сделки без давления и манипуляций.</p>
+      <p class="author-card-bio">{{ t.author_bio }}</p>
     </div>
   </div>
 
@@ -101,7 +102,7 @@ layout: default
       {% if r.url != page.url and related_count < 3 %}
         {% if related_count == 0 %}
           <section class="related">
-            <p class="related-title">Читать дальше</p>
+            <p class="related-title">{{ t.related_title }}</p>
             <div class="related-grid">
         {% endif %}
         <a class="related-item" href="{{ site.baseurl }}{{ r.url }}">

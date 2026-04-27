@@ -1,0 +1,126 @@
+# Translatable UI strings.
+# Access in templates via {{ site.data.i18n[page.lang].KEY }}
+# When adding a new key — add it in all 3 languages (ru, fr, en).
+
+ru:
+  # Navigation
+  nav_guides: "Гайды"
+  nav_about: "О проекте"
+  cta_masterclass: "Мастер-класс"
+
+  # Breadcrumbs
+  breadcrumb_home: "Главная"
+  breadcrumb_guides: "Гайды"
+
+  # Guide page elements
+  reading_time_default: "5 мин чтения"
+  no_water_chip: "Без воды"
+  faq_heading: "Частые вопросы"
+  related_title: "Читать дальше"
+
+  # Outro CTA
+  outro_kicker: "9-10 мая · Париж"
+  outro_title: "Хочешь натренировать это в реальных диалогах?"
+  outro_text: "На мастер-классе мы разбираем твои реальные звонки и переписки. Приносишь 3 ситуации, где сорвалась сделка — разбираем вживую и собираем для тебя личный скрипт."
+  outro_btn: "Оставить заявку →"
+
+  # Author card
+  author_bio: "Тренер по продажам, преподаватель метода Golden Key of Sales (Michael Bang). Помогаю предпринимателям и сейлзам закрывать сделки без давления и манипуляций."
+
+  # Footer
+  footer_tagline: "Практические гайды по продажам: лиды, возражения, закрытие. Метод Golden Key of Sales."
+  footer_nav_title: "Навигация"
+  footer_event_title: "Событие"
+  footer_event_page: "Страница мастер-класса"
+  footer_event_register: "Записаться"
+  footer_lang_title: "Языки"
+
+  # Aria labels
+  aria_main_nav: "Навигация"
+  aria_breadcrumbs: "Хлебные крошки"
+  aria_home_link: "На главную"
+
+  # Locale tag for og:locale meta
+  og_locale: "ru_RU"
+
+fr:
+  # Navigation
+  nav_guides: "Guides"
+  nav_about: "À propos"
+  cta_masterclass: "Masterclass"
+
+  # Breadcrumbs
+  breadcrumb_home: "Accueil"
+  breadcrumb_guides: "Guides"
+
+  # Guide page elements
+  reading_time_default: "5 min de lecture"
+  no_water_chip: "Sans bla-bla"
+  faq_heading: "Questions fréquentes"
+  related_title: "À lire ensuite"
+
+  # Outro CTA
+  outro_kicker: "9-10 mai · Paris"
+  outro_title: "Tu veux t'entraîner sur de vrais dialogues ?"
+  outro_text: "Pendant la masterclass on décortique tes vrais appels et messages. Tu apportes 3 situations où la vente a foiré — on les rejoue ensemble et on te construit un script personnel."
+  outro_btn: "Réserver ma place →"
+
+  # Author card
+  author_bio: "Coach commercial, formateur de la méthode Golden Key of Sales (Michael Bang). J'aide les entrepreneurs et les commerciaux à closer sans pression ni manipulation."
+
+  # Footer
+  footer_tagline: "Guides pratiques de vente : leads, objections, clôture. Méthode Golden Key of Sales."
+  footer_nav_title: "Navigation"
+  footer_event_title: "Événement"
+  footer_event_page: "Page de la masterclass"
+  footer_event_register: "S'inscrire"
+  footer_lang_title: "Langues"
+
+  # Aria labels
+  aria_main_nav: "Navigation"
+  aria_breadcrumbs: "Fil d'Ariane"
+  aria_home_link: "Accueil"
+
+  # Locale tag for og:locale meta
+  og_locale: "fr_FR"
+
+en:
+  # Navigation
+  nav_guides: "Guides"
+  nav_about: "About"
+  cta_masterclass: "Masterclass"
+
+  # Breadcrumbs
+  breadcrumb_home: "Home"
+  breadcrumb_guides: "Guides"
+
+  # Guide page elements
+  reading_time_default: "5 min read"
+  no_water_chip: "No fluff"
+  faq_heading: "Frequently asked questions"
+  related_title: "Read next"
+
+  # Outro CTA
+  outro_kicker: "May 9-10 · Paris"
+  outro_title: "Want to drill this on real calls?"
+  outro_text: "At the masterclass we break down your real calls and messages. You bring 3 situations where the deal went sideways — we replay them live and build you a personal script."
+  outro_btn: "Reserve my spot →"
+
+  # Author card
+  author_bio: "Sales coach and instructor of the Golden Key of Sales method (Michael Bang). I help founders and salespeople close deals without pressure or manipulation."
+
+  # Footer
+  footer_tagline: "Practical sales guides: leads, objections, closing. Golden Key of Sales method."
+  footer_nav_title: "Navigation"
+  footer_event_title: "Event"
+  footer_event_page: "Masterclass page"
+  footer_event_register: "Register"
+  footer_lang_title: "Languages"
+
+  # Aria labels
+  aria_main_nav: "Navigation"
+  aria_breadcrumbs: "Breadcrumbs"
+  aria_home_link: "Home"
+
+  # Locale tag for og:locale meta
+  og_locale: "en_US"

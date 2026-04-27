@@ -1,3 +1,5 @@
+{% assign current_lang = page.lang | default: site.default_lang | default: 'ru' %}
+{% assign t = site.data.i18n[current_lang] %}
 <footer class="footer">
   <div class="container">
     <div class="footer-grid">
@@ -7,31 +9,40 @@
            <span>Jean-Luc Mederic</span>
         </div>
         <p style="margin:12px 0 0;color:var(--muted-foreground);font-size:13px;max-width:44ch;">
-          Практические гайды по продажам: лиды, возражения, закрытие. Метод Golden Key of Sales.
+          {{ t.footer_tagline }}
         </p>
       </div>
 
       <div>
-        <p class="footer-title">Навигация</p>
-        <a class="footer-link" href="{{ site.baseurl }}/ru/guides/">Гайды</a>
+        <p class="footer-title">{{ t.footer_nav_title }}</p>
+        <a class="footer-link" href="{{ site.baseurl }}/{{ current_lang }}/guides/">{{ t.nav_guides }}</a>
         <br />
-        <a class="footer-link" href="{{ site.baseurl }}/ru/about/">О проекте</a>
+        <a class="footer-link" href="{{ site.baseurl }}/{{ current_lang }}/about/">{{ t.nav_about }}</a>
       </div>
 
       <div>
-        <p class="footer-title">Событие</p>
-        <a class="footer-link" href="https://jeanlucmederic.site/?utm_source=seo-machine&utm_medium=footer&utm_campaign=ru">Страница мастер-класса</a>
+        <p class="footer-title">{{ t.footer_event_title }}</p>
+        <a class="footer-link" href="https://jeanlucmederic.site/?utm_source=seo-machine&utm_medium=footer&utm_campaign={{ current_lang }}">{{ t.footer_event_page }}</a>
         <br />
-        <a class="footer-link" href="https://jeanlucmederic.site/#register?utm_source=seo-machine&utm_medium=footer&utm_campaign=ru">Записаться</a>
+        <a class="footer-link" href="https://jeanlucmederic.site/#register?utm_source=seo-machine&utm_medium=footer&utm_campaign={{ current_lang }}">{{ t.footer_event_register }}</a>
       </div>
 
       <div>
-        <p class="footer-title">Языки</p>
-        <span class="footer-link" style="opacity:0.6">RU (сейчас)</span>
-        <br />
-        <span class="footer-link" style="opacity:0.6">EN (скоро)</span>
-        <br />
-        <span class="footer-link" style="opacity:0.6">FR (скоро)</span>
+        <p class="footer-title">{{ t.footer_lang_title }}</p>
+        {% for lang in site.languages %}
+          {% if lang.code == current_lang %}
+            <span class="footer-link" style="opacity:0.6">{{ lang.short }} ({{ t.faq_heading | slice: 0, 0 }}{% case current_lang %}{% when 'ru' %}сейчас{% when 'fr' %}actuel{% when 'en' %}current{% endcase %})</span>
+          {% else %}
+            {% comment %}If the page provides hreflang_alt, link directly. Otherwise link to language home.{% endcomment %}
+            {% assign alt_href = page.hreflang_alt[lang.code] | default: nil %}
+            {% if alt_href %}
+              <a class="footer-link" href="{{ site.baseurl }}{{ alt_href }}">{{ lang.short }}</a>
+            {% else %}
+              <a class="footer-link" href="{{ site.baseurl }}/{{ lang.code }}/guides/">{{ lang.short }}</a>
+            {% endif %}
+          {% endif %}
+          <br />
+        {% endfor %}
       </div>
     </div>
 

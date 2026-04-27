@@ -1,19 +1,21 @@
+{% assign current_lang = page.lang | default: site.default_lang | default: 'ru' %}
+{% assign t = site.data.i18n[current_lang] %}
 <header class="topbar">
   <div class="container">
     <div class="topbar-inner">
-      <a class="brand" href="{{ site.baseurl }}/" aria-label="На главную">
+      <a class="brand" href="{{ site.baseurl }}/" aria-label="{{ t.aria_home_link }}">
         <span class="brand-mark" aria-hidden="true">
           <img src="{{ site.baseurl }}/assets/img/logo.png" alt="" loading="eager" />
         </span>
         <span>Jean-Luc Mederic</span>
       </a>
 
-      <nav class="nav" aria-label="Навигация">
-        <a href="{{ site.baseurl }}/ru/guides/">Гайды</a>
-        <a href="{{ site.baseurl }}/ru/about/">О проекте</a>
+      <nav class="nav" aria-label="{{ t.aria_main_nav }}">
+        <a href="{{ site.baseurl }}/{{ current_lang }}/guides/">{{ t.nav_guides }}</a>
+        <a href="{{ site.baseurl }}/{{ current_lang }}/about/">{{ t.nav_about }}</a>
       </nav>
 
-      <a class="cta" href="https://jeanlucmederic.site/#register?utm_source=seo-machine&utm_medium=header&utm_campaign=ru">Мастер-класс</a>
+      <a class="cta" href="https://jeanlucmederic.site/#register?utm_source=seo-machine&utm_medium=header&utm_campaign={{ current_lang }}">{{ t.cta_masterclass }}</a>
     </div>
   </div>
 </header>

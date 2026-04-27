@@ -5,7 +5,21 @@
       "WebFetch(domain:otvet.mail.ru)",
       "WebFetch(domain:www.reddit.com)",
       "WebFetch(domain:www.b17.ru)",
-      "WebFetch(domain:spark.ru)"
+      "WebFetch(domain:spark.ru)",
+      "Bash(git add *)",
+      "Bash(git commit *)",
+      "Bash(git push *)",
+      "Bash(git pull *)",
+      "Bash(git stash *)",
+      "Bash(git fetch *)",
+      "Bash(git merge *)",
+      "Bash(git checkout *)",
+      "Bash(git rebase *)",
+      "Bash(git reset *)",
+      "Bash(grep -vE '^\\(research/|prompts/ru-topic-researcher\\\\.md$|commit|Author|Date|$|    \\)')"
+    ],
+    "additionalDirectories": [
+      "d:\\Desktop\\ЖАН ЛЮК\\сео-машина\\.git"
     ]
   }
 }
