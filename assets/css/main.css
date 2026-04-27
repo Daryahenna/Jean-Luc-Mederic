@@ -250,6 +250,79 @@ main { padding-top: 96px; padding-bottom: 64px; }
 .prose p { margin: 10px 0; }
 .prose ul { margin: 10px 0; padding-left: 18px; }
 
+/* Make long-form guides easier to scan (inspired by airoomclub guides). */
+.prose a {
+  text-decoration: underline;
+  text-decoration-color: rgba(0, 117, 222, 0.35);
+  text-underline-offset: 3px;
+}
+
+.prose a:hover {
+  text-decoration-color: rgba(0, 117, 222, 0.65);
+}
+
+.prose ol {
+  margin: 10px 0;
+  padding-left: 22px;
+}
+
+.prose li {
+  margin: 6px 0;
+}
+
+.prose mark {
+  background: rgba(0, 117, 222, 0.12);
+  color: inherit;
+  padding: 2px 6px;
+  border-radius: 8px;
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+}
+
+.prose blockquote {
+  margin: 16px 0;
+  padding: 12px 14px;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border);
+  border-left: 4px solid rgba(0, 117, 222, 0.6);
+  background: rgba(0, 117, 222, 0.04);
+}
+
+.prose blockquote > :first-child { margin-top: 0; }
+.prose blockquote > :last-child { margin-bottom: 0; }
+
+.prose hr {
+  border: 0;
+  border-top: 1px solid var(--border);
+  margin: 22px 0;
+}
+
+.prose code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-size: 0.95em;
+  background: rgba(0, 0, 0, 0.04);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  padding: 2px 6px;
+  border-radius: 8px;
+}
+
+.prose pre {
+  margin: 14px 0;
+  padding: 14px 16px;
+  border-radius: var(--radius-xl);
+  background: #f7f7f6;
+  border: 1px solid var(--border);
+  overflow: auto;
+}
+
+.prose pre code {
+  background: transparent;
+  border: 0;
+  padding: 0;
+  border-radius: 0;
+  font-size: 13px;
+}
+
 .note {
   border: 1px solid var(--border);
   background: #fff;
