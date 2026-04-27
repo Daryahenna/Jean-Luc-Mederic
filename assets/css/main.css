@@ -834,4 +834,109 @@ main { padding-top: 96px; padding-bottom: 64px; }
   list-style: none;
   cursor: pointer;
   padding: 16px 50px 16px 18px;
-  font-weight: 600;
+  font-weight: 600;  font-size: 15px;
+  color: var(--foreground);
+  position: relative;
+  user-select: none;
+}
+.faq-item summary::-webkit-details-marker { display: none; }
+.faq-item summary::after {
+  content: "+";
+  position: absolute;
+  right: 18px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 22px;
+  font-weight: 400;
+  color: var(--accent);
+  line-height: 1;
+  transition: transform 0.2s ease;
+}
+.faq-item[open] summary::after {
+  content: "−";
+}
+.faq-item summary:hover { background: rgba(0, 117, 222, 0.04); }
+.faq-answer {
+  padding: 0 18px 18px;
+  color: var(--muted-foreground);
+  font-size: 15px;
+  line-height: 1.6;
+}
+.faq-answer p { margin: 0; }
+
+.outro-block {
+  margin: 38px 0 24px;
+  padding: 32px 26px;
+  border-radius: var(--radius-xl);
+  background: linear-gradient(135deg, rgba(0,117,222,0.10) 0%, rgba(0,117,222,0.03) 100%);
+  border: 1px solid rgba(0, 117, 222, 0.2);
+  text-align: center;
+}
+.outro-kicker {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--accent);
+  margin-bottom: 10px;
+}
+.outro-title {
+  margin: 0 0 12px;
+  font-size: 24px;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+  color: var(--foreground);
+}
+.outro-text {
+  margin: 0 auto 20px;
+  max-width: 50ch;
+  color: var(--muted-foreground);
+  font-size: 15px;
+  line-height: 1.55;
+}
+.outro-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 14px 24px;
+  border-radius: 14px;
+  background: var(--accent);
+  color: var(--accent-foreground);
+  font-weight: 700;
+  font-size: 15px;
+  text-decoration: none;
+  transition: transform 0.15s ease, opacity 0.15s ease;
+}
+.outro-btn:hover {
+  transform: translateY(-1px);
+  opacity: 1;
+}
+
+.cta-banner.is-index {
+  max-width: 100%;
+  margin: 18px 0 28px;
+}
+.cta-banner.is-index .cta-banner-img {
+  max-height: 220px;
+  object-fit: cover;
+  object-position: 50% 50%;
+}
+
+.card-media { height: 130px; }
+.card-body { padding: 16px 16px 18px; }
+.card-title { font-size: 17px; }
+
+@media (min-width: 768px) {
+  .nav { display: flex; }
+  .grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .footer-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+  main { padding-top: 104px; }
+  .related-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .guide-hero { padding: 48px 32px; min-height: 240px; }
+  .guide-hero-emoji { font-size: 110px; }
+}
+
+@media (min-width: 1024px) {
+  .grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
