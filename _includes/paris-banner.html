@@ -1,0 +1,22 @@
+{% assign banner_lang = page.lang | default: 'ru' %}
+{% if banner_lang != 'ru' and banner_lang != 'en' and banner_lang != 'fr' %}
+  {% assign banner_lang = 'ru' %}
+{% endif %}
+
+{% assign banner_src = site.baseurl | append: '/assets/img/banner-paris-' | append: banner_lang | append: '.png' %}
+
+{% case banner_lang %}
+  {% when 'fr' %}
+    {% assign banner_alt = 'Masterclass 9-10 mai, Paris' %}
+  {% when 'en' %}
+    {% assign banner_alt = 'May 9-10, Paris masterclass' %}
+  {% else %}
+    {% assign banner_alt = 'Мастер-класс 9-10 мая, Париж' %}
+{% endcase %}
+
+{% assign banner_medium = include.utm_medium | default: 'banner' %}
+{% assign banner_content = page.slug | default: page.url | url_encode %}
+
+<a class="cta-banner" href="https://jeanlucmederic.site/#register?utm_source=seo-machine&utm_medium={{ banner_medium | url_encode }}&utm_campaign={{ banner_lang | url_encode }}&utm_content={{ banner_content }}">
+  <img class="cta-banner-img" src="{{ banner_src }}" alt="{{ banner_alt }}" loading="lazy" />
+</a>
