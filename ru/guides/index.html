@@ -18,7 +18,11 @@ lang: ru
 <div class="grid" id="grid">
   {% for g in guides_ru %}
     <a class="card" href="{{ site.baseurl }}{{ g.url }}" data-category="{{ g.category | escape }}">
-      <div class="card-media"></div>
+      <div class="card-media">
+        {% if g.card_banner %}
+          <img class="card-media-img" src="{{ site.baseurl }}{{ g.card_banner }}" alt="" loading="lazy" />
+        {% endif %}
+      </div>
       <div class="card-body">
         {% if g.category %}
           <span class="card-kicker">{{ g.category }}</span>

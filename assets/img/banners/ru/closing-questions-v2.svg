@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#050712"/>
+      <stop offset="0.55" stop-color="#0B1020"/>
+      <stop offset="1" stop-color="#070A14"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.28" cy="0.32" r="0.85">
+      <stop offset="0" stop-color="#60A5FA" stop-opacity="0.20"/>
+      <stop offset="0.45" stop-color="#22C55E" stop-opacity="0.08"/>
+      <stop offset="1" stop-color="#000" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="line" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#22C55E"/>
+      <stop offset="1" stop-color="#60A5FA"/>
+    </linearGradient>
+    <filter id="blur" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="22"/>
+    </filter>
+    <style>
+      .kicker{font:650 26px/1.1 system-ui,-apple-system,Segoe UI,Inter,Arial;letter-spacing:.08em;fill:#A7B0C0;}
+      .title{font:760 78px/1.05 system-ui,-apple-system,Segoe UI,Inter,Arial;fill:#F6F7FB;}
+      .sub{font:520 30px/1.25 system-ui,-apple-system,Segoe UI,Inter,Arial;fill:#C9D1E0;}
+      .chip{font:600 24px/1 system-ui,-apple-system,Segoe UI,Inter,Arial;fill:#E8ECF6;}
+      .mono{font:600 22px/1 system-ui,-apple-system,Segoe UI,Inter,Arial;fill:#E8ECF6;opacity:.92;}
+    </style>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <rect width="1600" height="900" fill="url(#glow)"/>
+
+  <!-- right abstract panel -->
+  <g transform="translate(980 120)">
+    <rect x="0" y="0" width="520" height="660" rx="34" fill="#0D152A" opacity="0.72"/>
+    <rect x="34" y="44" width="452" height="118" rx="22" fill="#0B1220" opacity="0.75"/>
+    <rect x="34" y="182" width="452" height="118" rx="22" fill="#0B1220" opacity="0.64"/>
+    <rect x="34" y="320" width="452" height="118" rx="22" fill="#0B1220" opacity="0.54"/>
+
+    <!-- checkmarks -->
+    <g transform="translate(74 84)" fill="none" stroke="#A7F3D0" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" opacity="0.9">
+      <path d="M0 22l16 16 36-44"/>
+    </g>
+    <g transform="translate(74 222)" fill="none" stroke="#93C5FD" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" opacity="0.9">
+      <path d="M0 22l16 16 36-44"/>
+    </g>
+    <g transform="translate(74 360)" fill="none" stroke="#A7F3D0" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" opacity="0.8">
+      <path d="M0 22l16 16 36-44"/>
+    </g>
+
+    <text x="140" y="104" class="mono">READY</text>
+    <text x="140" y="242" class="mono">CHOICE</text>
+    <text x="140" y="380" class="mono">CLOSING</text>
+
+    <!-- glow blob -->
+    <circle cx="440" cy="560" r="140" fill="#60A5FA" opacity="0.14" filter="url(#blur)"/>
+    <circle cx="350" cy="600" r="110" fill="#22C55E" opacity="0.10" filter="url(#blur)"/>
+  </g>
+
+  <!-- chips -->
+  <g transform="translate(96 86)">
+    <rect x="0" y="0" rx="18" ry="18" width="170" height="46" fill="#10182B" opacity="0.9"/>
+    <text x="22" y="31" class="chip">ЗАКРЫТИЕ</text>
+    <rect x="184" y="0" rx="18" ry="18" width="220" height="46" fill="#10182B" opacity="0.75"/>
+    <text x="206" y="31" class="chip">Скрипт + диалог</text>
+  </g>
+
+  <!-- left text -->
+  <g transform="translate(96 240)">
+    <text class="kicker" x="0" y="0">ПРОТОКОЛ ЗАКРЫТИЯ</text>
+    <text class="title" x="0" y="96">Три вопроса</text>
+    <text class="title" x="0" y="176">вместо давления</text>
+    <rect x="0" y="216" width="520" height="6" rx="3" fill="url(#line)" opacity="0.95"/>
+    <text class="sub" x="0" y="288">Проверка готовности → выбор → короткий шаг</text>
+    <text class="sub" x="0" y="332" opacity="0.92">Без неловкой паузы «ну что, подписываем?»</text>
+  </g>
+
+  <!-- small star -->
+  <g opacity="0.16" transform="translate(340 700)">
+    <g fill="#F59E0B">
+      <path d="M-6-110h12v55h-12z"/>
+      <path d="M-6 55h12v55h-12z"/>
+      <path d="M-110-6h55v12h-55z"/>
+      <path d="M 55-6h55v12h-55z"/>
+      <path d="M-6-78l12-6 30 52-12 6z"/>
+      <path d="M-6 78l12 6 30-52-12-6z"/>
+      <path d="M-78-6l6-12 52 30-6 12z"/>
+      <path d="M 78-6l-6-12-52 30 6 12z"/>
+    </g>
+  </g>
+</svg>

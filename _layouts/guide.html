@@ -51,7 +51,11 @@ layout: default
     <span>{{ page.reading_time | default: t.reading_time_default }}</span>
   </div>
 
-  {% if page.hero_emoji %}
+  {% if page.hero_banner %}
+    <div class="guide-banner" aria-hidden="true">
+      <img class="guide-banner-img" src="{{ site.baseurl }}{{ page.hero_banner }}" alt="" loading="eager" />
+    </div>
+  {% elsif page.hero_emoji %}
     <div class="guide-hero" aria-hidden="true">
       <div>
         <div class="guide-hero-emoji">{{ page.hero_emoji }}</div>

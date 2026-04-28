@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#070913"/>
+      <stop offset="0.55" stop-color="#0B1326"/>
+      <stop offset="1" stop-color="#060812"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.62" cy="0.25" r="0.8">
+      <stop offset="0" stop-color="#F59E0B" stop-opacity="0.16"/>
+      <stop offset="0.45" stop-color="#60A5FA" stop-opacity="0.10"/>
+      <stop offset="1" stop-color="#000" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#F59E0B"/>
+      <stop offset="1" stop-color="#60A5FA"/>
+    </linearGradient>
+    <filter id="soft" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="26"/>
+    </filter>
+    <style>
+      .chip{font:600 24px/1 system-ui,-apple-system,Segoe UI,Inter,Arial;fill:#E8ECF6;}
+      .title{font:780 74px/1.05 system-ui,-apple-system,Segoe UI,Inter,Arial;fill:#F6F7FB;}
+      .sub{font:520 30px/1.25 system-ui,-apple-system,Segoe UI,Inter,Arial;fill:#C9D1E0;}
+      .big3{font:820 240px/1 system-ui,-apple-system,Segoe UI,Inter,Arial;fill:#F6F7FB;}
+      .label{font:650 24px/1 system-ui,-apple-system,Segoe UI,Inter,Arial;letter-spacing:.10em;fill:#A7B0C0;}
+    </style>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <rect width="1600" height="900" fill="url(#glow)"/>
+
+  <!-- chips -->
+  <g transform="translate(96 86)">
+    <rect x="0" y="0" rx="18" ry="18" width="170" height="46" fill="#10182B" opacity="0.9"/>
+    <text x="22" y="31" class="chip">ЗАКРЫТИЕ</text>
+    <rect x="184" y="0" rx="18" ry="18" width="200" height="46" fill="#10182B" opacity="0.75"/>
+    <text x="206" y="31" class="chip">Golden Key</text>
+  </g>
+
+  <!-- big number block -->
+  <g transform="translate(980 180)">
+    <circle cx="260" cy="270" r="260" fill="#0B1220" opacity="0.55" filter="url(#soft)"/>
+    <text x="190" y="360" class="big3">3</text>
+    <rect x="80" y="420" width="360" height="6" rx="3" fill="url(#accent)" opacity="0.95"/>
+
+    <g transform="translate(120 470)" opacity="0.92">
+      <rect x="0" y="0" rx="22" width="320" height="64" fill="#0B1220" opacity="0.75"/>
+      <text x="30" y="41" class="sub" font-size="26">Ready • Choice • Closing</text>
+    </g>
+  </g>
+
+  <!-- left text -->
+  <g transform="translate(96 260)">
+    <text class="label" x="0" y="0">БЕЗ ДАВЛЕНИЯ</text>
+    <text class="title" x="0" y="96">Закрытие сделки</text>
+    <text class="title" x="0" y="176">через вопросы</text>
+    <rect x="0" y="216" width="520" height="6" rx="3" fill="url(#accent)" opacity="0.9"/>
+    <text class="sub" x="0" y="288">Сначала готовность. Потом выбор. Потом шаг.</text>
+    <text class="sub" x="0" y="332" opacity="0.92">Так клиент сам говорит: «давай начнём»</text>
+  </g>
+
+  <!-- subtle starburst -->
+  <g opacity="0.14" transform="translate(320 640)">
+    <g fill="#F59E0B">
+      <path d="M-7-140h14v70h-14z"/>
+      <path d="M-7 70h14v70h-14z"/>
+      <path d="M-140-7h70v14h-70z"/>
+      <path d="M 70-7h70v14h-70z"/>
+      <path d="M-6-100l12-7 36 62-12 7z"/>
+      <path d="M-6 100l12 7 36-62-12-7z"/>
+      <path d="M-100-6l7-12 62 36-7 12z"/>
+      <path d="M 100-6l-7-12-62 36 7 12z"/>
+    </g>
+  </g>
+</svg>

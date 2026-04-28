@@ -9,6 +9,8 @@ chips:
   - "6 min de lecture"
 hero_emoji: "🎯"
 hero_caption: "Le moment où la vente se clôt ou meurt silencieusement"
+card_banner: "/assets/img/banners/fr/questions-de-cloture.svg"
+hero_banner: "/assets/img/banners/fr/questions-de-cloture.svg"
 author: "Jean-Luc Médéric"
 date: 2026-04-27
 reading_time: "6 min de lecture"
