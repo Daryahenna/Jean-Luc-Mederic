@@ -59,19 +59,19 @@ Dans chaque cas, ton interlocuteur cesse d'être le seul décideur. Si tu l'as l
 ## Ce qu'il NE faut PAS dire
 
 <div class="bad-example">
-<p>« Bien sûr, parle-en ! J'attends de vos nouvelles. »</p>
+<p>« Bien sûr, parle-en ! J'attends de tes nouvelles. »</p>
 </div>
 
 Qu'est-ce qui ne va pas ? Tu **as transféré le contrôle à l'extérieur et tu es sorti du jeu**. Dans une semaine, tu recevras soit « le partenaire est contre », soit le silence. Les deux options sont une défaite pour toi.
 
 <div class="bad-example">
-<p>« Que va regarder votre partenaire exactement ? Peut-être que je peux lui envoyer la présentation ? »</p>
+<p>« Que va regarder ton partenaire exactement ? Peut-être que je peux lui envoyer la présentation ? »</p>
 </div>
 
 Qu'est-ce qui ne va pas ? Une « présentation » par email est **la forme la plus lente et la plus faible de transmission d'information**. Le partenaire l'ouvrira dans 3 jours, la parcourra rapidement, et ne comprendra pas la moitié.
 
 <div class="bad-example">
-<p>« D'accord, je vais appeler votre partenaire directement — donnez-moi son contact ? »</p>
+<p>« D'accord, je vais appeler ton partenaire directement — donne-moi son contact ? »</p>
 </div>
 
 Qu'est-ce qui ne va pas ? Un mouvement **trop direct**. Le client sent que tu le contournes. Réaction défensive : « Je vais parler avec lui moi-même ».
@@ -109,12 +109,12 @@ L'objectif est de découvrir ce qui est **critique pour le second**, et non pour
 
 Après avoir compris le contexte — propose un choix :
 
-<div class="phrase-card">« Compris. Alors deux options : soit nous nous appelons à trois pendant 15 minutes — il entendra de première main et pourra poser des questions. Soit je te prépare un texte court en 5 minutes — tu l'envoies, il le lit en une minute, puis vous en discutez. Qu'est-ce qui est plus pratique ? »</div>
+<div class="phrase-card">« Compris. Alors deux options : soit nous nous appelons à trois pendant 15 minutes — il entendra de première main et pourra poser des questions. Soit je te prépare un texte court en 5 minutes — tu l'envoies, il le lit en une minute, puis tu en discutes avec lui. Qu'est-ce qui est plus pratique ? »</div>
 
 ### Scénario A : Accepté pour une réunion à trois
 
 <div class="good-example">
-<p><strong>Script de confirmation :</strong> « Super. Je suis disponible mardi à 15h00 ou mercredi à 11h00. Qu'est-ce qui convient le mieux à vous deux ? Et une question : pour que la réunion soit efficace — qu'est-ce que [le partenaire] veut entendre en premier ? Je vais me préparer en conséquence. »</p>
+<p><strong>Script de confirmation :</strong> « Super. Je suis disponible mardi à 15h00 ou mercredi à 11h00. Qu'est-ce qui te convient le mieux ? Et une question : pour que la réunion soit efficace — qu'est-ce que [le partenaire] veut entendre en premier ? Je vais me préparer en conséquence. »</p>
 </div>
 
 Une réunion à trois de 15 minutes est 5 fois plus efficace que des semaines d'échanges.
@@ -160,7 +160,7 @@ Après 15 minutes avec le partenaire — le contrat a été signé dans les 48 h
 
 <div class="phrase-card">« Deux options : texte à envoyer ou appel à trois pendant 15 minutes. Qu'est-ce qui est plus pratique ? »</div>
 
-<div class="phrase-card">« Je suis disponible [jour1] ou [jour2]. Qu'est-ce qui convient le mieux à vous deux ? »</div>
+<div class="phrase-card">« Je suis disponible [jour1] ou [jour2]. Qu'est-ce qui te convient le mieux ? »</div>
 
 <div class="phrase-card">« Quelle est sa principale inquiétude concernant ce genre de projets — je vais préparer une réponse à cela. »</div>
 

@@ -20,14 +20,14 @@ faq:
   - q: "Que dire si j'ai déjà relancé 3 fois et qu'il n'y a toujours pas de réponse ?"
     a: "Un message final au format « lâcher prise » : « J'ai compris la situation. Si le sujet n'est plus d'actualité — dis-le simplement, je ne te dérangerai pas. Si besoin — écris-moi ». Cela fonctionne dans 80% des cas — le client répond soit « oui, pas maintenant » (ce qui est normal), soit « désolé, je suis débordé, appelons-nous ». L'important est de rester sans rancune dans le ton."
   - q: "Faut-il appeler ou écrire ?"
-    a: "Cela dépend de la manière dont vous avez communiqué jusqu'à présent. S'il y a eu un appel — au 3ème jour, un appel est deux fois plus efficace qu'un email. Si vous avez discuté par chat/messagerie — reste dans le chat (le push donne un meilleur reach). Ne change pas de canal pour quelque chose de plus froid. Ne téléphone pas si tu n'as eu que des emails — cela sera perçu comme de la pression."
+    a: "Cela dépend de la manière dont tu as communiqué jusqu'à présent. S'il y a eu un appel — au 3ème jour, un appel est deux fois plus efficace qu'un email. Si tu as discuté par chat/messagerie — reste dans le chat (le push donne un meilleur reach). Ne change pas de canal pour quelque chose de plus froid. Ne téléphone pas si tu n'as eu que des emails — cela sera perçu comme de la pression."
   - q: "Combien de relances est-il normal de faire avant de « lâcher prise » ?"
     a: "Cinq. La première — dans les 24 heures, la deuxième — au jour 3, la troisième — au jour 7, la quatrième — au jour 14, la cinquième — le message final de « lâcher prise » au bout de 21 jours. Ensuite, une pause de 2-3 mois, puis un retour avec un motif (une nouvelle, un cas, une mise à jour). La sixième relance consécutive — c'est déjà du harcèlement."
 ---
 
-L'année dernière, en mai, j'ai envoyé un devis à un client pour 38 000 € — un conseil annuel pour une entreprise de logistique. Lors de l'appel, la personne était enthousiaste : « C'est exactement ce dont nous avons besoin. J'attends votre présentation. » Je l'ai envoyée. Et silence.
+L'année dernière, en mai, j'ai envoyé un devis à un client pour 38 000 € — un conseil annuel pour une entreprise de logistique. Lors de l'appel, la personne était enthousiaste : « C'est exactement ce dont nous avons besoin. J'attends ta présentation. » Je l'ai envoyée. Et silence.
 
-Une semaine plus tard, j'ai écrit le standard « Avez-vous eu le temps de regarder ? ». Silence. Deux semaines après — « Je comprends que vous soyez occupé, dès que vous aurez une minute... ». Silence. Trois mois plus tard, j'ai appris dans les nouvelles qu'ils avaient signé avec un concurrent. Pour **un montant inférieur, mais une semaine avant la date limite**.
+Une semaine plus tard, j'ai écrit le standard « As-tu eu le temps de regarder ? ». Silence. Deux semaines après — « Je comprends que tu sois occupé, dès que tu auras une minute... ». Silence. Trois mois plus tard, j'ai appris dans les nouvelles qu'ils avaient signé avec un concurrent. Pour **un montant inférieur, mais une semaine avant la date limite**.
 
 J'ai analysé la situation avec mon coach, et il a dit une phrase qui ne m'est parvenue qu'un mois plus tard : **« Le silence n'est pas "le client réfléchit". C'est "le client a déjà choisi, et souvent ce n'est pas toi". »** Ensuite, j'ai appris le système des 5 relances en 14 jours, et parmi toutes les affaires « disparues », un tiers revient. Ce n'est pas de la magie — j'ai simplement cessé d'attendre que le temps fasse son œuvre.
 
@@ -60,19 +60,19 @@ Le mot « disparu » signifie en réalité l'une des 5 situations suivantes :
 ## Ce qu'il ne faut PAS écrire après un devis
 
 <div class="bad-example">
-<p>« Bonjour ! Avez-vous eu le temps de regarder notre devis ? Cordialement, [nom] »</p>
+<p>« Bonjour ! As-tu eu le temps de regarder notre devis ? Cordialement, [nom] »</p>
 </div>
 
 Qu'est-ce qui ne va pas ? **C'est un contact vide.** Il n'y a pas de raison, pas de valeur, pas de nouvelle information. Le client le lit en 2 secondes et le met de côté : « J'ai regardé, je répondrai quand je pourrai » (= jamais). Pire encore — c'est un signal « je suis nerveux et je veux une confirmation », ce qui abaisse ta position dans les négociations.
 
 <div class="bad-example">
-<p>« Je comprends que vous soyez très occupé, et je ne veux pas être insistant... je voulais juste vérifier si notre proposition est toujours d'actualité ? »</p>
+<p>« Je comprends que tu sois très occupé, et je ne veux pas être insistant... je voulais juste vérifier si notre proposition est toujours d'actualité ? »</p>
 </div>
 
 Qu'est-ce qui ne va pas ? **Des excuses pour ton appel.** « Je ne veux pas être insistant » — à ce moment-là, le client pense : « Donc, tu es insistant, puisque tu le dis toi-même ». De plus, « est-ce toujours d'actualité » — c'est une question à laquelle il est plus facile de répondre « pas vraiment » ou de ne pas répondre du tout. Tu as toi-même proposé une sortie.
 
 <div class="bad-example">
-<p>« Bonjour ! Je vous rappelle que notre proposition n'est valable que jusqu'à la fin de la semaine. Si vous ne prenez pas de décision — il faudra recalculer. »</p>
+<p>« Bonjour ! Je te rappelle que notre proposition n'est valable que jusqu'à la fin de la semaine. Si tu ne prends pas de décision — il faudra recalculer. »</p>
 </div>
 
 Qu'est-ce qui ne va pas ? **Une date limite fictive.** Le client le sent à des kilomètres, surtout si tu n'as pas parlé de délai auparavant. Au lieu d'accélérer la vente — cela accélère sa sortie.
@@ -101,7 +101,7 @@ Après ce contact, tu auras dans 60% des cas soit un appel programmé, soit une 
 
 **Objectif :** ne pas « rappeler », mais **faciliter la décision**. Apporter quelque chose d'utile au devis — un cas, un calcul, une réponse à une question potentielle.
 
-<div class="phrase-card">« [Nom], pendant que tu examines le devis — j'ai envoyé un court cas d'une entreprise voisine de votre secteur (PDF d'une page). Ils ont démarré dans une situation similaire en mars, et en août, ils ont atteint [chiffre concret]. Si tu veux — discutons de la façon dont cela peut s'appliquer chez vous. »</div>
+<div class="phrase-card">« [Nom], pendant que tu examines le devis — j'ai envoyé un court cas d'une entreprise voisine de ton secteur (PDF d'une page). Ils ont démarré dans une situation similaire en mars, et en août, ils ont atteint [chiffre concret]. Si tu veux — discutons de la façon dont cela peut s'appliquer chez toi. »</div>
 
 Trois motifs de travail pour le deuxième contact :
 
@@ -115,7 +115,7 @@ Trois motifs de travail pour le deuxième contact :
 
 ## Étape 3. Jour 7 — question directe sur le processus
 
-**Objectif :** comprendre **où en est la décision**. Pas « qu'avez-vous décidé », mais « comment se passe le processus ».
+**Objectif :** comprendre **où en est la décision**. Pas « qu'as-tu décidé », mais « comment se passe le processus ».
 
 <div class="phrase-card">« [Nom], où en es-tu dans la discussion sur le devis ? Pour que je comprenne — avons-nous le temps d'entrer dans ton planning ou devrais-je mieux me retirer et revenir dans un mois ? »</div>
 
@@ -124,7 +124,7 @@ C'est un coup fort. Tu nommes directement ce qui est généralement caché : la 
 ### Scénario A : « Oui, nous en discutons, besoin d'une semaine »
 
 <div class="good-example">
-<p><strong>Script :</strong> « Compris. Alors, je vais t'envoyer un message la semaine prochaine mercredi — court, sans pression. Si vous êtes prêts — nous en discuterons. Si c'est encore trop tôt — tu diras juste "encore une semaine", je ne te dérangerai pas. Ça te va ? »</p>
+<p><strong>Script :</strong> « Compris. Alors, je vais t'envoyer un message la semaine prochaine mercredi — court, sans pression. Si tu es prêt — on en discutera. Si c'est encore trop tôt — tu diras juste "encore une semaine", je ne te dérangerai pas. Ça te va ? »</p>
 </div>
 
 ### Scénario B : « Un bloqueur interne est apparu »
@@ -190,7 +190,7 @@ Le vendredi, c'était « oui ». Sans réduction, sans pression. L'affaire a sim
 
 <div class="phrase-card">« J'ai envoyé le devis hier. Quand tu auras le temps de le regarder — j'ai 10 minutes pour toute question. Mardi avant midi ou mercredi après 14 heures ? »</div>
 
-<div class="phrase-card">« J'ai envoyé un court cas de votre secteur — 1 page. Cela pourrait être utile lors de la discussion. »</div>
+<div class="phrase-card">« J'ai envoyé un court cas de ton secteur — 1 page. Cela pourrait être utile lors de la discussion. »</div>
 
 <div class="phrase-card">« Où en est la discussion sur le devis ? Pour que je comprenne — avons-nous le temps d'entrer ou devrions-nous mieux nous retirer pour un mois ? »</div>
 
@@ -208,7 +208,7 @@ Le vendredi, c'était « oui ». Sans réduction, sans pression. L'affaire a sim
 
 <ul class="check">
 <li>Ce message a-t-il un motif concret (cas / matériel / question) ?</li>
-<li>Je n'utilise pas « je comprends que vous soyez occupé » / « je ne veux pas être insistant » ?</li>
+<li>Je n'utilise pas « je comprends que tu sois occupé » / « je ne veux pas être insistant » ?</li>
 <li>Le message contient-il un micro-pas (choix de créneau, réponse oui/non, action concrète) ?</li>
 <li>Je ne propose pas de réduction en premier ?</li>
 <li>Je sais quel sera le prochain pas si je n'ai pas de réponse dans 7 jours ?</li>
@@ -221,7 +221,7 @@ Si au moins une réponse est « non » — n'envoie pas. Réécris.
 <div class="callout is-warn">
 <p class="callout-title">⚠️ Ce qui tue une affaire dans le follow-up</p>
 <ol>
-<li><strong>Contacts vides « n'avez-vous pas eu la possibilité ? ».</strong> Sans motif = sans lisibilité.</li>
+<li><strong>Contacts vides « n'as-tu pas eu la possibilité ? ».</strong> Sans motif = sans lisibilité.</li>
 <li><strong>Excuses pour l'appel.</strong> « Je ne veux pas déranger » — tu confirmes toi-même que tu déranges.</li>
 <li><strong>Réduction lors du deuxième contact.</strong> Signal de panique. Le prix se dévalorise.</li>
 <li><strong>Changement de canal vers quelque chose de plus froid.</strong> Si c'était par chat — ne téléphone pas, n'écris pas par email. Chat → chat.</li>
@@ -237,6 +237,6 @@ Si au moins une réponse est « non » — n'envoie pas. Réécris.
 
 5 contacts en 21 jours, dans le bon ordre : **24 heures — jour 3 — jour 7 — jour 14 — jour 21**. Chaque contact avec un motif, chaque contact avec un micro-pas, chaque contact non vide. Si après cette séquence le client ne revient pas — il n'a pas disparu, il est vraiment « pas maintenant ». Et c'est normal. L'important — c'est de fermer la boucle proprement, sans rancune, pour que dans 3 mois, tu puisses revenir sans awkwardness.
 
-La phrase la plus coûteuse dans le follow-up — ce n'est pas « non ». La plus coûteuse — c'est « je comprends que vous soyez occupé, avez-vous eu le temps... ». N'écris jamais cela. Remplace par un motif et un micro-pas — et un tiers des « disparus » reviendra.
+La phrase la plus coûteuse dans le follow-up — ce n'est pas « non ». La plus coûteuse — c'est « je comprends que tu sois occupé, as-tu eu le temps... ». N'écris jamais cela. Remplace par un motif et un micro-pas — et un tiers des « disparus » reviendra.
 
 Voir aussi : [« Je vais réfléchir »]({{ site.baseurl }}/fr/guides/objection-je-vais-reflechir/) — que faire lors de la réunion pour que le client ne parte pas « réfléchir » en principe. Et [« Je dois en parler »]({{ site.baseurl }}/fr/guides/objection-je-dois-en-parler/) — si il s'avère que le bloqueur est chez un autre décideur.
