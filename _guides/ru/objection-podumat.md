@@ -9,6 +9,8 @@ chips:
   - "6 мин чтения"
 hero_emoji: "🧠"
 hero_caption: "Самая частая фраза, после которой сделка тихо умирает"
+card_banner: "/assets/img/banners/ru/objection-podumat.svg"
+hero_banner: "/assets/img/banners/ru/objection-podumat.svg"
 author: "Jean-Luc Médéric"
 date: 2026-04-27
 reading_time: "6 мин чтения"

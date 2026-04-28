@@ -9,6 +9,8 @@ chips:
   - "7 min de lecture"
 hero_emoji: "📞"
 hero_caption: "L'étape de vente qui pose les bases du succès des autres"
+card_banner: "/assets/img/banners/fr/plan-de-prospection.svg"
+hero_banner: "/assets/img/banners/fr/plan-de-prospection.svg"
 author: "Jean-Luc Médéric"
 date: 2026-04-27
 reading_time: "7 min de lecture"

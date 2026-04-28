@@ -9,6 +9,8 @@ chips:
   - "6 min de lecture"
 hero_emoji: "🤝"
 hero_caption: "Objection après laquelle la décision échappe à tes mains"
+card_banner: "/assets/img/banners/fr/objection-je-dois-en-parler.svg"
+hero_banner: "/assets/img/banners/fr/objection-je-dois-en-parler.svg"
 author: "Jean-Luc Médéric"
 date: 2026-04-27
 reading_time: "6 min de lecture"

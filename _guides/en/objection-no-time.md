@@ -9,6 +9,8 @@ chips:
   - "5 min read"
 hero_emoji: "🔥"
 hero_caption: "The #1 objection on cold calls"
+card_banner: "/assets/img/banners/en/objection-no-time.svg"
+hero_banner: "/assets/img/banners/en/objection-no-time.svg"
 author: "Jean-Luc Médéric"
 date: 2026-04-27
 reading_time: "5 min read"

@@ -9,6 +9,8 @@ chips:
   - "5 min read"
 hero_emoji: "⏱️"
 hero_caption: "An objection that sounds like “no, but politely”"
+card_banner: "/assets/img/banners/en/objection-not-now.svg"
+hero_banner: "/assets/img/banners/en/objection-not-now.svg"
 author: "Jean-Luc Médéric"
 date: 2026-04-27
 reading_time: "5 min read"

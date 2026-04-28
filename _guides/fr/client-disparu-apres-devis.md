@@ -9,6 +9,8 @@ chips:
   - "7 min de lecture"
 hero_emoji: "✉️"
 hero_caption: "Le silence le plus coûteux en B2B — la pause après l'envoi du devis"
+card_banner: "/assets/img/banners/fr/client-disparu-apres-devis.svg"
+hero_banner: "/assets/img/banners/fr/client-disparu-apres-devis.svg"
 author: "Jean-Luc Médéric"
 date: 2026-04-27
 reading_time: "7 min de lecture"

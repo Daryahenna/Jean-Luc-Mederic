@@ -9,6 +9,8 @@ chips:
   - "7 min read"
 hero_emoji: "💸"
 hero_caption: "The #1 objection where 90% of deals get lost"
+card_banner: "/assets/img/banners/en/objection-its-too-expensive.svg"
+hero_banner: "/assets/img/banners/en/objection-its-too-expensive.svg"
 author: "Jean-Luc Médéric"
 date: 2026-04-27
 reading_time: "7 min read"

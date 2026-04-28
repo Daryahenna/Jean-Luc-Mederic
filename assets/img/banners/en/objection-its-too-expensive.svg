@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#05060E"/>
+      <stop offset="0.5" stop-color="#0B1326"/>
+      <stop offset="1" stop-color="#05060E"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.18" cy="0.62" r="0.95">
+      <stop offset="0" stop-color="#F97316" stop-opacity="0.14"/>
+      <stop offset="0.45" stop-color="#60A5FA" stop-opacity="0.10"/>
+      <stop offset="1" stop-color="#000" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#F97316"/>
+      <stop offset="0.55" stop-color="#F59E0B"/>
+      <stop offset="1" stop-color="#60A5FA"/>
+    </linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="14"/>
+    </filter>
+    <style>
+      .chip{font:600 24px/1 system-ui,-apple-system,Segoe UI,Inter,Arial;fill:#E8ECF6;}
+      .title{font:820 82px/1.02 system-ui,-apple-system,Segoe UI,Inter,Arial;fill:#F6F7FB;}
+      .sub{font:520 30px/1.25 system-ui,-apple-system,Segoe UI,Inter,Arial;fill:#C9D1E0;}
+      .tag{font:650 22px/1 system-ui,-apple-system,Segoe UI,Inter,Arial;fill:#E8ECF6;opacity:.92;}
+      .mono{font:740 30px/1 system-ui,-apple-system,Segoe UI,Inter,Arial;fill:#F6F7FB;}
+    </style>
+  </defs>
+
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <rect width="1600" height="900" fill="url(#glow)"/>
+
+  <g transform="translate(96 86)">
+    <rect x="0" y="0" rx="18" ry="18" width="190" height="46" fill="#10182B" opacity="0.9"/>
+    <text x="22" y="31" class="chip">OBJECTIONS</text>
+    <rect x="206" y="0" rx="18" ry="18" width="210" height="46" fill="#10182B" opacity="0.75"/>
+    <text x="228" y="31" class="chip">PRICE</text>
+  </g>
+
+  <path d="M-120 820L700 -40" stroke="url(#accent)" stroke-width="14" opacity="0.32"/>
+  <path d="M60 920L900 0" stroke="url(#accent)" stroke-width="6" opacity="0.22"/>
+
+  <g transform="translate(990 210)">
+    <rect x="0" y="0" width="520" height="520" rx="42" fill="#0B1220" opacity="0.60"/>
+
+    <g transform="translate(56 64)">
+      <rect x="0" y="0" width="408" height="118" rx="28" fill="#10182B" opacity="0.85"/>
+      <rect x="0" y="142" width="408" height="118" rx="28" fill="#10182B" opacity="0.70"/>
+      <rect x="0" y="284" width="408" height="118" rx="28" fill="#10182B" opacity="0.58"/>
+
+      <text x="28" y="74" class="tag">Clarify the reason</text>
+      <text x="28" y="216" class="tag">Compare like for like</text>
+      <text x="28" y="358" class="tag">Fit the payment format</text>
+
+      <g transform="translate(332 30)">
+        <rect x="0" y="0" width="54" height="54" rx="16" fill="#0E172A" opacity="0.95"/>
+        <text x="12" y="38" class="mono">€</text>
+      </g>
+      <circle cx="380" cy="202" r="10" fill="#60A5FA" opacity="0.95"/>
+      <circle cx="380" cy="344" r="10" fill="#F59E0B" opacity="0.95"/>
+    </g>
+
+    <circle cx="120" cy="420" r="150" fill="#F97316" opacity="0.10" filter="url(#shadow)"/>
+    <circle cx="420" cy="420" r="170" fill="#60A5FA" opacity="0.07" filter="url(#shadow)"/>
+  </g>
+
+  <g transform="translate(96 280)">
+    <text class="title" x="0" y="0">"Too expensive"</text>
+    <text class="title" x="0" y="88">is not a no</text>
+    <rect x="0" y="122" width="560" height="8" rx="4" fill="url(#accent)" opacity="0.92"/>
+    <text class="sub" x="0" y="202">Listen → clarify → answer</text>
+    <text class="sub" x="0" y="246" opacity="0.92">No discount. No arguing.</text>
+  </g>
+</svg>

@@ -9,6 +9,8 @@ chips:
   - "6 min de lecture"
 hero_emoji: "🧠"
 hero_caption: "La phrase la plus courante après laquelle la vente meurt silencieusement"
+card_banner: "/assets/img/banners/fr/objection-je-vais-reflechir.svg"
+hero_banner: "/assets/img/banners/fr/objection-je-vais-reflechir.svg"
 author: "Jean-Luc Médéric"
 date: 2026-04-27
 reading_time: "6 min de lecture"

@@ -9,6 +9,8 @@ chips:
   - "5 мин чтения"
 hero_emoji: "⏱️"
 hero_caption: "Возражение, которое звучит как «нет, но вежливо»"
+card_banner: "/assets/img/banners/ru/objection-pozhe.svg"
+hero_banner: "/assets/img/banners/ru/objection-pozhe.svg"
 author: "Jean-Luc Médéric"
 date: 2026-04-27
 reading_time: "5 мин чтения"

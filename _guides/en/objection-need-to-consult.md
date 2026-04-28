@@ -9,6 +9,8 @@ chips:
   - "6 min read"
 hero_emoji: "🤝"
 hero_caption: "The objection where the decision leaves your hands"
+card_banner: "/assets/img/banners/en/objection-need-to-consult.svg"
+hero_banner: "/assets/img/banners/en/objection-need-to-consult.svg"
 author: "Jean-Luc Médéric"
 date: 2026-04-27
 reading_time: "6 min read"

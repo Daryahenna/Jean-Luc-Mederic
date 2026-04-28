@@ -9,6 +9,8 @@ chips:
   - "7 min read"
 hero_emoji: "✉️"
 hero_caption: "The most expensive silence in B2B is right after you send the proposal"
+card_banner: "/assets/img/banners/en/client-ghosted-after-proposal.svg"
+hero_banner: "/assets/img/banners/en/client-ghosted-after-proposal.svg"
 author: "Jean-Luc Médéric"
 date: 2026-04-27
 reading_time: "7 min read"

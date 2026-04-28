@@ -9,6 +9,8 @@ chips:
   - "7 мин чтения"
 hero_emoji: "💸"
 hero_caption: "Главное возражение, на котором сливают 90% сделок"
+card_banner: "/assets/img/banners/ru/objection-dorogo.svg"
+hero_banner: "/assets/img/banners/ru/objection-dorogo.svg"
 author: "Jean-Luc Médéric"
 date: 2026-04-27
 reading_time: "7 мин чтения"

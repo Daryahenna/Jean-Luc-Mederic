@@ -9,6 +9,8 @@ chips:
   - "7 мин чтения"
 hero_emoji: "✉️"
 hero_caption: "Самая дорогая «тишина» в B2B — пауза после отправки КП"
+card_banner: "/assets/img/banners/ru/kp-ghosting.svg"
+hero_banner: "/assets/img/banners/ru/kp-ghosting.svg"
 author: "Jean-Luc Médéric"
 date: 2026-04-27
 reading_time: "7 мин чтения"

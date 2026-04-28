@@ -9,6 +9,8 @@ chips:
   - "6 min read"
 hero_emoji: "🧠"
 hero_caption: "The most common line after which a deal quietly dies"
+card_banner: "/assets/img/banners/en/objection-let-me-think.svg"
+hero_banner: "/assets/img/banners/en/objection-let-me-think.svg"
 author: "Jean-Luc Médéric"
 date: 2026-04-27
 reading_time: "6 min read"

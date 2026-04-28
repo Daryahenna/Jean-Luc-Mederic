@@ -9,6 +9,8 @@ chips:
   - "7 min de lecture"
 hero_emoji: "💸"
 hero_caption: "L'objection principale qui fait perdre 90% des ventes"
+card_banner: "/assets/img/banners/fr/objection-c-est-cher.svg"
+hero_banner: "/assets/img/banners/fr/objection-c-est-cher.svg"
 author: "Jean-Luc Médéric"
 date: 2026-04-27
 reading_time: "7 min de lecture"

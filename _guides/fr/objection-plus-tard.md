@@ -9,6 +9,8 @@ chips:
   - "5 min de lecture"
 hero_emoji: "⏱️"
 hero_caption: "Une objection qui sonne comme un « non, mais poliment »"
+card_banner: "/assets/img/banners/fr/objection-plus-tard.svg"
+hero_banner: "/assets/img/banners/fr/objection-plus-tard.svg"
 author: "Jean-Luc Médéric"
 date: 2026-04-27
 reading_time: "5 min de lecture"

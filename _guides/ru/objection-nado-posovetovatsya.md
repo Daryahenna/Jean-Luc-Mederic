@@ -9,6 +9,8 @@ chips:
   - "6 мин чтения"
 hero_emoji: "🤝"
 hero_caption: "Возражение, после которого решение уходит из твоих рук"
+card_banner: "/assets/img/banners/ru/objection-nado-posovetovatsya.svg"
+hero_banner: "/assets/img/banners/ru/objection-nado-posovetovatsya.svg"
 author: "Jean-Luc Médéric"
 date: 2026-04-27
 reading_time: "6 мин чтения"

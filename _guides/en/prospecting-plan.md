@@ -9,6 +9,8 @@ chips:
   - "7 min read"
 hero_emoji: "📞"
 hero_caption: "The sales step that determines whether everything else works"
+card_banner: "/assets/img/banners/en/prospecting-plan.svg"
+hero_banner: "/assets/img/banners/en/prospecting-plan.svg"
 author: "Jean-Luc Médéric"
 date: 2026-04-27
 reading_time: "7 min read"

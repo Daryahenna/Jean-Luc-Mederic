@@ -9,6 +9,8 @@ chips:
   - "7 мин чтения"
 hero_emoji: "📞"
 hero_caption: "Этап продажи, на котором закладывается успех всех остальных"
+card_banner: "/assets/img/banners/ru/prospecting-plan.svg"
+hero_banner: "/assets/img/banners/ru/prospecting-plan.svg"
 author: "Jean-Luc Médéric"
 date: 2026-04-27
 reading_time: "7 мин чтения"

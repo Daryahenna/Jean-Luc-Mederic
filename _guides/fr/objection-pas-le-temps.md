@@ -9,6 +9,8 @@ chips:
   - "5 min de lecture"
 hero_emoji: "🔥"
 hero_caption: "L'objection principale lors des appels à froid"
+card_banner: "/assets/img/banners/fr/objection-pas-le-temps.svg"
+hero_banner: "/assets/img/banners/fr/objection-pas-le-temps.svg"
 author: "Jean-Luc Médéric"
 date: 2026-04-27
 reading_time: "5 min de lecture"
