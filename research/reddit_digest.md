@@ -1,5 +1,5 @@
 # Reddit research digest
-Last updated: 2026-05-03 22:44 UTC
+Last updated: 2026-05-04 08:32 UTC
 Total posts in archive: 122 | Showing top 30 by score
 
 Используется как сырьё для новых статей. Когда видишь горячую тему/цитату —
